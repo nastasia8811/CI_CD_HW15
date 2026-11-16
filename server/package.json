@@ -15,7 +15,8 @@
     "migration:create": "tsx ../node_modules/typeorm/cli.js migration:create",
     "migration:run": "tsx --env-file=.env ../node_modules/typeorm/cli.js migration:run -d src/db/data-source.ts",
     "migration:revert": "tsx --env-file=.env ../node_modules/typeorm/cli.js migration:revert -d src/db/data-source.ts",
-    "seed": "tsx --env-file=.env src/db/seed.ts"
+    "seed": "tsx --env-file=.env src/db/seed.ts",
+    "build": "tsc --noEmit false --outDir dist --rewriteRelativeImportExtensions"
   },
   "nodemonConfig": {
     "ext": "ts,json",
