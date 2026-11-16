@@ -1,13 +1,13 @@
 import path from 'node:path'
-import { config } from './config.ts'
+import { config } from './config.js'
 import express, { type Express, type Request, type Response, type NextFunction } from 'express'
-import newspostsRouter from './src/routes/newsposts.router.ts'
-import { ErrorHandler } from './src/error/errorHandler.ts'
-import { ValidationError } from './src/error/errorHandler.ts'
+import newspostsRouter from './src/routes/newsposts.router.js'
+import { ErrorHandler } from './src/error/errorHandler.js'
+import { ValidationError } from './src/error/errorHandler.js'
 import passport from 'passport'
-import authRoutes from './src/routes/auth.router.ts'
-import { AppDataSource } from './src/db/data-source.ts'
-import { logger } from './src/logger.ts'
+import authRoutes from './src/routes/auth.router.js'
+import { AppDataSource } from './src/db/data-source.js'
+import { logger } from './src/logger.js'
 
 const app: Express = express()
 const clientDistPath = path.join(import.meta.dirname, '../client/dist')

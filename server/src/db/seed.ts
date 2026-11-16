@@ -1,9 +1,9 @@
 import { faker } from '@faker-js/faker'
-import { AppDataSource } from './data-source.ts'
-import { User } from '../entities/User.ts'
-import { Newspost } from '../entities/Newspost.ts'
-import { hashPassword } from '../auth.ts'
-import { logger } from '../logger.ts'
+import { AppDataSource } from './data-source.js'
+import { User } from '../entities/User.js'
+import { Newspost } from '../entities/Newspost.js'
+import { hashPassword } from '../auth.js'
+import { logger } from '../logger.js'
 
 const GENRES = ['Politic', 'Business', 'Sport', 'Other']
 const DEFAULT_EMAIL = 'admin@test.com'

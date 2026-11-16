@@ -1,8 +1,8 @@
-import { NewspostsRepository } from '../repositories/newsposts.repository.ts'
-import type { CreateNewspostBody, UpdateNewspostBody, PaginationParams } from '../types/types.ts'
-import { ValidationError, NewspostsServiceError } from '../error/errorHandler.ts'
-import { ajv, validateCreate, validateUpdate } from '../validation/validation.ts'
-import type { UserSchema } from '../interfaces/interfaces.ts'
+import { NewspostsRepository } from '../repositories/newsposts.repository.js'
+import type { CreateNewspostBody, UpdateNewspostBody, PaginationParams } from '../types/types.js'
+import { ValidationError, NewspostsServiceError } from '../error/errorHandler.js'
+import { ajv, validateCreate, validateUpdate } from '../validation/validation.js'
+import type { UserSchema } from '../interfaces/interfaces.js'
 
 export class NewspostsService {
   static async getAll(params: PaginationParams) {

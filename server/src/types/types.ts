@@ -1,5 +1,5 @@
 import type { Request } from 'express'
-import type { NewspostSchema } from '../interfaces/interfaces.ts'
+import type { NewspostSchema } from '../interfaces/interfaces.js'
 
 type NewspostByIdRequest = Request<{ id: string }>
 

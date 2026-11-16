@@ -1,7 +1,7 @@
-import { AppDataSource } from '../db/data-source.ts'
-import { Newspost } from '../entities/Newspost.ts'
-import type { UserSchema } from '../interfaces/interfaces.ts'
-import type { CreateNewspostBody, PaginationParams, UpdateNewspostBody } from '../types/types.ts'
+import { AppDataSource } from '../db/data-source.js'
+import { Newspost } from '../entities/Newspost.js'
+import type { UserSchema } from '../interfaces/interfaces.js'
+import type { CreateNewspostBody, PaginationParams, UpdateNewspostBody } from '../types/types.js'
 
 const table = AppDataSource.getRepository(Newspost)
 
