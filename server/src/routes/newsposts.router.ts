@@ -1,6 +1,6 @@
 import { type Response, Router } from 'express'
 import passport from 'passport'
-import type { UserSchema } from '../interfaces/interfaces.ts'
+import type { UserSchema } from '../interfaces/interfaces.js'
 
 import type {
   CreateNewspostRequest,
@@ -8,9 +8,9 @@ import type {
   GetNewspostsRequest,
   NewspostByIdRequest,
   UpdateNewspostRequest,
-} from '../types/types.ts'
-import { NewspostsService } from '../services/newsposts.service.ts'
-import { ErrorHandler } from '../error/errorHandler.ts'
+} from '../types/types.js'
+import { NewspostsService } from '../services/newsposts.service.js'
+import { ErrorHandler } from '../error/errorHandler.js'
 
 const router = Router()
 

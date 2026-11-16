@@ -1,10 +1,10 @@
 import 'reflect-metadata'
 import { DataSource } from 'typeorm'
-import { User } from '../entities/User.ts'
-import { Newspost } from '../entities/Newspost.ts'
-import { Init1794603224231 } from '../migrations/1794603224231-Init.ts'
-import { AddDeletedRenameTitle1794603881170 } from '../migrations/1794603881170-AddDeletedRenameTitle.ts'
-import { AddIndexes1794603997276 } from '../migrations/1794603997276-AddIndexes.ts'
+import { User } from '../entities/User.js'
+import { Newspost } from '../entities/Newspost.js'
+import { Init1794603224231 } from '../migrations/1794603224231-Init.js'
+import { AddDeletedRenameTitle1794603881170 } from '../migrations/1794603881170-AddDeletedRenameTitle.js'
+import { AddIndexes1794603997276 } from '../migrations/1794603997276-AddIndexes.js'
 
 export const AppDataSource = new DataSource({
   type: 'postgres',

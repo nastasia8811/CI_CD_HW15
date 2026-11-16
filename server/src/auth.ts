@@ -2,8 +2,8 @@ import crypto from 'node:crypto'
 import jwt from 'jsonwebtoken'
 import passport from 'passport'
 import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt'
-import { findUserById } from './repositories/users.repository.ts'
-import type { UserSchema } from './interfaces/interfaces.ts'
+import { findUserById } from './repositories/users.repository.js'
+import type { UserSchema } from './interfaces/interfaces.js'
 
 const JWT_SECRET = process.env.JWT_SECRET as string
 

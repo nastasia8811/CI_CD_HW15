@@ -1,5 +1,5 @@
 import { Column, CreateDateColumn, Entity, ManyToOne, PrimaryGeneratedColumn, Index } from 'typeorm'
-import { User } from './User.ts'
+import { User } from './User.js'
 
 @Entity('newsposts')
 export class Newspost {

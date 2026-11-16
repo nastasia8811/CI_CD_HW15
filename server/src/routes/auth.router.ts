@@ -1,10 +1,10 @@
 import { Router } from 'express'
 import passport from 'passport'
-import { ajv, validateRegistration, validateAuthentification } from '../validation/validation.ts'
-import { findUserByEmail, createUser } from '../repositories/users.repository.ts'
-import { hashPassword, createToken } from '../auth.ts'
-import type { UserSchema } from '../interfaces/interfaces.ts'
-import type { RegisterBody, AuthenBody } from '../types/types.ts'
+import { ajv, validateRegistration, validateAuthentification } from '../validation/validation.js'
+import { findUserByEmail, createUser } from '../repositories/users.repository.js'
+import { hashPassword, createToken } from '../auth.js'
+import type { UserSchema } from '../interfaces/interfaces.js'
+import type { RegisterBody, AuthenBody } from '../types/types.js'
 
 const router = Router()
 
