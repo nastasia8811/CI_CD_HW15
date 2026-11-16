@@ -71,6 +71,10 @@ app.use((err: Error, _req: Request, res: Response, next: NextFunction) => {
 await AppDataSource.initialize()
 logger.info('Database connected')
 
-app.listen(config.port, config.host, (): void => {
-  logger.info(`Listening on ${config.host}:${config.port}`)
-})
+if (!process.env.VERCEL) {
+  app.listen(config.port, config.host, (): void => {
+    logger.info(`Listening on ${config.host}:${config.port}`)
+  })
+}
+
+export default app
