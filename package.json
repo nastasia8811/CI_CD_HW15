@@ -6,7 +6,7 @@
     "server"
   ],
   "scripts": {
-    "prepare": "husky",
+    "prepare": "husky || true",
     "start": "npm run start -w server",
     "client": "npm run dev --prefix client",
     "build": "npm run build -w server && npm run build --prefix client",
